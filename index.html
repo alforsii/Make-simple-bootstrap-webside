@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap 4 Website</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Bootstrap</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
-    <!-- Start Home -->
+    <!-------------------- Start Home ---------------------------------------->
     <div id="home">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a href="index.html" class="navbar-brand">
-          <img src="./img/logo.png" alt="logo" />
+          <img src="./img/logo-ironhack-black.png" alt="logo" />
         </a>
         <!-- navbar menu dropdown button -->
         <button
@@ -29,34 +29,249 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- navbar menu dropdown list -->
+        <!------------ navbar menu dropdown list -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Course</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#course" class="nav-link">Course</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
+      <!-- ----------------Start Image slider -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="7000"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <!------------- Carousel  -->
+        <div class="carousel-inner" role="listbox">
+          <!-- slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background: url(img/slider-4.jpg) no-repeat;background-size: cover;"
+          >
+            <div class="carousel-caption text-center">
+              <h1>Welcome to Slider</h1>
+              <h3>Animated Bootstrap Theme</h3>
+              <a href="#course" class="btn btn-outline-light btn-lg">
+                Get Started
+              </a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div
+            class="carousel-item"
+            style="background: url(img/slider-2.jpg)  no-repeat;background-size: cover;"
+          ></div>
+          <!-- slide 3 -->
+          <div
+            class="carousel-item"
+            style="background: url(img/slider-3.jpg)  no-repeat;background-size: cover;"
+          ></div>
+        </div>
+        <!-- End Carousel-->
+        <!-------- Prev & Next slider buttons -->
+        <a
+          href="#carouselExampleIndicators"
+          class="carousel-control-prev"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          href="#carouselExampleIndicators"
+          class="carousel-control-next"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- End Image slider -->
     </div>
-
     <!-- End Home -->
-    <!-- Start Course -->
-    <div id="course"></div>
-    <!-- End Course -->
-    <!-- Start Portfolio -->
-    <div id="portfolio"></div>
-    <!-- End Portfolio -->
-    <!-- Start Team -->
-    <div id="team"></div>
-    <!-- End Team -->
-    <!-- Start Contacts -->
-    <div id="contacts"></div>
-    <!-- End Contact -->
 
-    <!--- Footer -->
+    <!------------------- Start Course --------------------------------------->
+    <div id="course" class="offset">
+      <div class="col-12 narrow text-center">
+        <h1>Bootstrap Course</h1>
+        <p class="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+          aspernatur delectus accusamus alias ea aliquam ut earum distinctio
+          laboriosam assumenda officia nulla quaerat repellat, natus
+          perspiciatis! Nesciunt natus dolorum iste.
+        </p>
+        <a
+          href="https://getbootstrap.com/"
+          class="btn btn-secondary btn-md"
+          target="_blank"
+        >
+          Learn Bootstrap
+        </a>
+      </div>
+    </div>
+    <!-- End Course -->
+    <!------------------ Start Portfolio ------------------------------------->
+    <div id="portfolio" class="offset">
+      <!-- Jumbotron -->
+      <div class="jumbotron container-fluid">
+        <div class="col-12 text-center">
+          <h3 class="heading">Portfolio</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="row no-padding">
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-2.jpg" target="_blank">
+                <img src="./img/portfolio-2.jpg" alt="portfolio" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-2.jpg" target="_blank">
+                <img src="./img/portfolio-2.jpg" alt="portfolio-2" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-5.jpg" target="_blank">
+                <img src="./img/portfolio-5.jpg" alt="portfolio-3" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-6.jpg" target="_blank">
+                <img src="./img/portfolio-6.jpg" alt="portfolio-4" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-5.jpg" target="_blank">
+                <img src="./img/portfolio-5.jpg" alt="portfolio-5" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio">
+              <a href="img/portfolio-6.jpg" target="_blank">
+                <img src="./img/portfolio-6.jpg" alt="portfolio-6" />
+              </a>
+            </div>
+          </div>
+
+          <div class="narrow text-center">
+            <div class="col-12">
+              <p class="lead">Learn Bootstrap</p>
+              <a
+                href="https://getbootstrap.com/"
+                class="btn btn-secondary btn-md"
+                target="_blank"
+              >
+                My Bootstrap
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end row-->
+      </div>
+      <!-- End Jumbotron -->
+    </div>
+    <!-- End Portfolio -->
+    <!--------------------- Start Team --------------------------------------->
+    <div id="team" class="offset">
+      <div class="col-12 text-center">
+        <h3 class="heading">Team</h3>
+        <div class="heading-underline"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6">
+          <div class="card text-center">
+            <img src="./img/team1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4>John Doe</h4>
+              <p>
+                I have over 10 years of experience in technology and haven't
+                worked with a better team than Ironhack
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center">
+            <img src="./img/team3.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4>Charles Davis</h4>
+              <p>
+                I have over 10 years of experience in technology and haven't
+                worked with a better team than Ironhack
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end team sec row-->
+    </div>
+    <!-- End Team -->
+    <!---------------------- Footer ------------------------------------------>
+    <!------------------- Start Contacts ------------------------------------->
+    <div id="contact" class="offset">
+      <footer>
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center">
+            <img src="./img/logo-ironhack-blue.png" alt="logo" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              beatae, ullam id voluptas quibusdam minima ducimus totam quia, vel
+              provident nesciunt quasi culpa dolorem consequuntur atque quos
+              velit sunt. Omnis?
+            </p>
+            <strong>Contact Info</strong>
+            <p>
+              (888) 888-8888
+              <br />
+              email@gmail.com
+            </p>
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </div>
+          <hr class="socket" />
+          &copy; My Bootstrap
+        </div>
+      </footer>
+      <br />
+    </div>
+    <!-- End Contact -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
